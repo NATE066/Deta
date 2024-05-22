@@ -1,0 +1,123 @@
+/* Global CSS for all pages */
+
+/* Define a color palette */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --background-color: #f4f4f4;
+    --background-color2: #343148ff;
+    --text-color: #333;
+    --nav-background: #333;
+    --button-background: #f39c12; /* Changed to a more eye-catching color */
+    --footer-background: #333;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color2);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+nav {
+    background-color: var(--nav-background); /* Changed to variable */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Improved alignment */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color); /* Changed to variable */
+    text-transform: uppercase;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Feature section styles */
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Improved alignment */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: var(--button-background); /* Changed to variable */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--footer-background); /* Changed to variable */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Improved alignment */
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
